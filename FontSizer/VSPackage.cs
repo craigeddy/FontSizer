@@ -23,6 +23,7 @@
             DecreaseFontSize.Initialize(this);
             base.Initialize();
         }
+        
 
     }
 }
