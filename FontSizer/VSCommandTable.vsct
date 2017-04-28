@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h" />
+
+  <Extern href="vsshlids.h" />
+
+  <Commands package="guidIncreaseFontSizePackage">
+    <Groups>
+      <Group guid="guidIncreaseFontSizePackageCmdSet" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />
+      </Group>
+    </Groups>
+
+    <Buttons>
+      <Button guid="guidIncreaseFontSizePackageCmdSet" id="IncreaseFontSizeId" priority="0x0100" type="Button">
+        <Parent guid="guidIncreaseFontSizePackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidIncreaseFontSize" id="bmpPic1" />
+        <Strings>
+          <ButtonText>Invoke IncreaseFontSize</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidIncreaseFontSizePackageCmdSet" id="cmdidDecreaseFontSize" priority="0x0100" type="Button">
+        <Parent guid="guidIncreaseFontSizePackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guidDecreaseFontSize" id="bmpPic1" />
+        <Strings>
+          <ButtonText>Invoke DecreaseFontSize</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+
+    <Bitmaps>
+      <Bitmap guid="guidIncreaseFontSize" href="Resources\IncreaseFontSize.png" usedList="bmpPic1" />
+      <Bitmap guid="guidDecreaseFontSize" href="Resources\DecreaseFontSize.png" usedList="bmpPic1" />
+    </Bitmaps>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="guidIncreaseFontSizePackage" value="{1099b5c0-7023-4762-9cd9-008d1219c716}" />
+
+    <GuidSymbol name="guidIncreaseFontSizePackageCmdSet" value="{fcca8c63-3b62-4b25-aad1-e644cc9528cc}">
+      <IDSymbol name="MyMenuGroup" value="0x1020" />
+      <IDSymbol name="IncreaseFontSizeId" value="0x0100" />
+      <IDSymbol value="4129" name="cmdidDecreaseFontSize" />
+    </GuidSymbol>
+
+    <GuidSymbol name="guidIncreaseFontSize" value="{cdf18170-d1de-407c-8a0c-b62b1679a964}">
+      <IDSymbol name="bmpPic1" value="1" />
+    </GuidSymbol>
+  
+    <GuidSymbol name="guidDecreaseFontSize" value="{485347fb-c9e4-40b9-b140-1a8e8438f8ff}">
+      <IDSymbol name="bmpPic1" value="1" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
