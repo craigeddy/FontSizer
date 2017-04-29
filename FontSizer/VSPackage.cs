@@ -1,4 +1,5 @@
 ﻿namespace FontSizer {
+    using System;
     using System.Diagnostics.CodeAnalysis;
     using System.Runtime.InteropServices;
     using FontSizer.Commands;
@@ -13,7 +14,7 @@
     [SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1650:ElementDocumentationMustBeSpelledCorrectly", Justification = "pkgdef, VS and vsixmanifest are valid VS terms")]
     public sealed class VSPackage : Microsoft.VisualStudio.Shell.Package {
 
-        public const string PackageGuidString = "1099b5c0-7023-4762-9cd9-008d1219c716";
+        public const String PackageGuidString = "1099b5c0-7023-4762-9cd9-008d1219c716";
 
         public VSPackage() {
         }
@@ -22,6 +23,8 @@
             IncreaseFontSize.Initialize(this);
             DecreaseFontSize.Initialize(this);
             base.Initialize();
+    FontSizer.Commands.IncreaseEnviornmentFontSize.Initialize(this);
+    FontSizer.Commands.DecreaseEnviornmentFontSize.Initialize(this);
         }
         
 

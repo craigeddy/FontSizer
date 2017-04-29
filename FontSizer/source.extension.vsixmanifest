@@ -4,6 +4,7 @@
     <Identity Id="a7f3c8a0-dc70-429d-8ca5-7ccc9b09e013" Version="1.0" Language="en-US" Publisher="Karl Shifflett" />
     <DisplayName>Font Sizer</DisplayName>
     <Description xml:space="preserve">Visual Studio Extension for easily change the font sizes in the editors or environment.</Description>
+    <MoreInfo>https://github.com/Oceanware/FontSizer</MoreInfo>
     <License>Resources\LICENSE</License>
     <Icon>Resources\FontSize90x90.png</Icon>
     <PreviewImage>Resources\FontSize175x175.png</PreviewImage>

@@ -9,33 +9,36 @@ or get the [CI build](http://vsixgallery.com/extension/a7f3c8a0-dc70-429d-8ca5-7
 
 ---------------------------------------
 
-# UNDER CONSTRUCTION
-
-Visual Studio Extension for easily change the font sizes in the editors or environment.
+Visual Studio 2017 Extension for easily change the font sizes in the editors or environment.
 
 See the [change log](CHANGELOG.md) for changes and road map.
 
-
+### Credits
+I learned a lot from this oustanding extension.  Essentially, I updated for VS 2017 and added environment font size changing.  Sam Harwell gets all the credit for the hard work.
 https://github.com/tunnelvisionlabs/PresentationMode
 
 ## Features
+Quickly change the editor's font sizes or the environment's font size.
 
-- Feature 1
-- Feature 2
-  - Sub feature
+Recommend assigning shortcut keys to each of the 4 commands. These are the commands I use:
 
-### Feature 1
-Describe feature 1. Add screenshots/code samples etc.
+- CTRL + Num Pad Arrow Up = Increase editor font sizes
+- CTRL + Num Pad Arrow Down = Decrease editor font sizes
+- CTRL + Num Pad Arrow Right = Increase environment font size
+- CTRL + Num Pad Arrow Left = Increase environment font size
 
-### Feature 2
-Describe feature 2. Add screenshots/code samples etc.
 
-#### Sub feature
-Describe sub feature. Add screenshots/code samples etc.
+### Change Editor Font Size
+Each time the respective Editor increase font size or decrese font size command is invoked the following changes are made:
 
-## Contribute
-Check out the [contribution guidelines](CONTRIBUTING.md)
-if you want to contribute to this project.
+- TextEditor changes by 2
+- StatementCompletion changes by 1
+- TextOutputToolWindows changes by 1
+- Tooltip changes by 1
+- CodeLensCategory changes by 1
+
+### Change Environment Font Size
+Each time the respective Editor increase font size or decrese font size command is invoked the environment font size is changed by 2.
 
 For cloning and building this project yourself, make sure
 to install the
