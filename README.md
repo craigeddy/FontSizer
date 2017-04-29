@@ -4,7 +4,7 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/tnus4nu8x9f65vbd?svg=true)](https://ci.appveyor.com/project/kdawg1406/fontsizer)
 
 <!-- Update the VS Gallery link after you upload the VSIX-->
-Download this extension from the [VS Gallery](https://visualstudiogallery.msdn.microsoft.com/[GuidFromGallery])
+Download this extension from the [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=KarlShifflettkdawg.FontSizer)
 or get the [CI build](http://vsixgallery.com/extension/a7f3c8a0-dc70-429d-8ca5-7ccc9b09e013/).
 
 ---------------------------------------
