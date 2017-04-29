@@ -9,9 +9,8 @@ or get the [CI build](http://vsixgallery.com/extension/a7f3c8a0-dc70-429d-8ca5-7
 
 ---------------------------------------
 
-Visual Studio 2017 Extension for easily change the font sizes in the editors or environment.
+Visual Studio 2017 Extension for easily changing the font sizes in the editor or environment.
 
-See the [change log](CHANGELOG.md) for changes and road map.
 
 ### Credits
 I learned a lot from this oustanding extension.  Essentially, I updated for VS 2017 and added environment font size changing.  Sam Harwell gets all the credit for the hard work.
@@ -29,7 +28,7 @@ Recommend assigning shortcut keys to each of the 4 commands. These are the comma
 
 
 ### Change Editor Font Size
-Each time the respective Editor increase font size or decrese font size command is invoked the following changes are made:
+Each time the respective Editor increase font size or decrease font size command is invoked the following changes are made:
 
 - TextEditor changes by 2
 - StatementCompletion changes by 1
@@ -38,7 +37,7 @@ Each time the respective Editor increase font size or decrese font size command 
 - CodeLensCategory changes by 1
 
 ### Change Environment Font Size
-Each time the respective Editor increase font size or decrese font size command is invoked the environment font size is changed by 2.
+Each time the respective Editor increase font size or decrease font size command is invoked the environment font size is changed by 2.
 
 For cloning and building this project yourself, make sure
 to install the
